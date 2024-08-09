@@ -1,0 +1,156 @@
+:root {
+	--toolbar-color: #20222a;
+	--window-color: #292c36;
+
+	--border-radius: 20px;
+}
+
+@font-face {
+	font-family: "JetBrainsMono-Bold";
+	src: url("./fonts/JetBrainsMono-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	font-family: "JetBrainsMono-Bold", monospace;
+	background-color: #f0f0f0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	min-width: 0;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+#toolbar {
+	width: 100%;
+	height: 3.5rem;
+
+	position: relative;
+
+	display: flex;
+	justify-content: start;
+	align-items: center;
+
+	flex-direction: row;
+
+	background: #20222a;
+
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 2rem;
+
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
+}
+
+#window-title {
+	color: white;
+
+	font-family: monospace;
+	font-size: 1.8rem;
+}
+
+#icons {
+	position: absolute;
+	right: 15px;
+	color: white;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	gap: 1.1rem;
+}
+
+#icons div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 2rem;
+}
+
+.enlarge {
+	font-size: 2.2rem;
+	margin-top: 0px;
+}
+
+.minimize {
+	font-size: 2rem;
+	margin-top: -4px;
+}
+
+.close {
+	background: #a34f6d;
+	border-radius: 50%;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	font-size: 1.2rem;
+	align-items: center;
+}
+
+#content {
+	width: 100%;
+	flex-grow: 1;
+
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: start;
+
+	background: #292c36;
+
+	border-bottom-left-radius: var(--border-radius);
+	border-bottom-right-radius: var(--border-radius);
+
+	padding: 2rem;
+
+	font-size: 2rem;
+
+	color: #fafafa;
+}
+
+.line {
+	margin-top: 0.2rem;
+}
+
+.prompt {
+	color: #00ff00;
+}
+
+.gray {
+	color: #6c757d;
+}
+
+.light-gray {
+	color: #adb5bd;
+}
+
+.white {
+	color: #eee;
+}
+
+.blue {
+	color: #61afef;
+}
+
+.mt-1 {
+	margin-top: 0.2rem;
+}
