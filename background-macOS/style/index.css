@@ -1,6 +1,6 @@
 :root {
 	--toolbar-color: black;
-	--body-color: rgba(0, 0, 0, 0.95);
+	--window-color: rgba(15, 15, 15, 1);
 
 	--border-radius: 10px;
 }
@@ -91,7 +91,7 @@ body {
 	height: 100%;
 	margin: 0 auto;
 
-	background: var(--body-color);
+	background: var(--window-color);
 
 	border-bottom-left-radius: var(--border-radius);
 	border-bottom-right-radius: var(--border-radius);
